@@ -15,7 +15,7 @@ class App extends React.Component {
   render() {
     // 最后两个未用模板参数的原因是路径深度不一定
     return (
-      <HashRouter>
+      <HashRouter hashType="hashbang">
         <Switch>
           <Redirect exact from="/docs" to="/docs/demo1.md" />
           <Redirect exact from="/docs/" to="/docs/demo1.md" />
